@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ContextEditor" default="default" basedir=".">
+    <description>Builds, tests, and runs the project ContextEditor.</description>
+    <import file="nbproject/build-impl.xml"/>
+
+	<target name="-post-jar">
+		<copy todir="dist/lib/linux-amd64">
+			<fileset dir="../../Libs/JOGL-1.1.1a/linux-amd64">
+				<include name="*"/>
+				<exclude name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="dist/lib/linux-i586">
+			<fileset dir="../../Libs/JOGL-1.1.1a/linux-i586">
+				<include name="*"/>
+				<exclude name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="dist/lib/macosx-ppc">
+			<fileset dir="../../Libs/JOGL-1.1.1a/macosx-ppc">
+				<include name="*"/>
+				<exclude name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="dist/lib/macosx-universal">
+			<fileset dir="../../Libs/JOGL-1.1.1a/macosx-universal">
+				<include name="*"/>
+				<exclude name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="dist/lib/solaris-amd64">
+			<fileset dir="../../Libs/JOGL-1.1.1a/solaris-amd64">
+				<include name="*"/>
+				<exclude name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="dist/lib/solaris-i586">
+			<fileset dir="../../Libs/JOGL-1.1.1a/solaris-i586">
+				<include name="*"/>
+				<exclude name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="dist/lib/solaris-sparc">
+			<fileset dir="../../Libs/JOGL-1.1.1a/solaris-sparc">
+				<include name="*"/>
+				<exclude name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="dist/lib/solaris-sparcv9">
+			<fileset dir="../../Libs/JOGL-1.1.1a/solaris-sparcv9">
+				<include name="*"/>
+				<exclude name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="dist/lib/windows-amd64">
+			<fileset dir="../../Libs/JOGL-1.1.1a/windows-amd64">
+				<include name="*"/>
+				<exclude name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="dist/lib/windows-i586">
+			<fileset dir="../../Libs/JOGL-1.1.1a/windows-i586">
+				<include name="*"/>
+				<exclude name="*.jar"/>
+			</fileset>
+		</copy>
+	</target>
+</project>
